@@ -7,102 +7,136 @@
     <meta name="description" content="Кока дьявол">
     <meta name="keyword" content="усы, лапы, хвост, Легница">
     <title>Bagira</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <img src="20220319_104332.jpg" width="150" alt="это моя фотка">
+        <div class="container">
+            
+            <div class="info">
 
-    <h1>Bagira</h1>
+                    <img src="20220319_104332.jpg" alt="это моя фотка" class="avatar">
 
-    <p><strong>Черный хвост</strong>, длина 20 см</p>
+                <div class="info-text">
+                    <h1>Bagira</h1>
 
-    <p><strong>черные лапки</strong>, не царапаю</p>
-    
-    <p><strong>и 3 белых волосины</strong>, <strong><em>ну может чуть больше :)</em></strong></p>
+                    <p><strong>Черный хвост</strong>, длина 20 см</p>
 
-    <a href="https://www.instagram.com/">insta</a>
-    /
-    <a href="https://www.facebook.com/">telega</a>
-    /
-    <a href="https://www.vkontakte.com">VK</a>
+                    <p><strong>черные лапки</strong>, не царапаю</p>
+                    
+                    <p><strong>и 3 белых волосины</strong>, <strong><em>ну может чуть больше :)</em></strong></p>
+                </div>
 
-    <hr>
 
-    <h2>Мои хобби</h2>
-    <ol>
-        <li>кусаться</li>
-        <li>не давать спать</li>
-        <li>кушать</li>
-        <li>носиться как демон</li>
-        <li>поспать</li>
-    </ol>
 
-    <h2>А также</h2>
-    <ul>    
-        <li>драть когтеточку</li>
-        <li>охотиться на мух</li>
-        <li>прижиматься к земле на улице</li>
-        <li>выбегать на корридор, когда приходят кожанные</li>
-    </ul>
-    <hr>
+            </div>
 
-    <h2>Мои Друзья</h2>
 
-    <table>
-        <thead>
-            <tr>
-                <th>Порода</th>
-                <th>Цвет</th>
-                <th>Имя</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Дворняжка</td>
-                <td>Черный</td>
-                <td>Багира</td>
-            </tr>
-            <tr>
-                <td>Дворовой</td>
-                <td>Рыжий</td>
-                <td>Джек</td>
-            </tr>
-            <tr>
-                <td>Польский дворняга</td>
-                <td>Цветной</td>
-                <td>Китюрек</td>
-            </tr>
-            <tr>
-                <td>Бенгал</td>
-                <td>Пятнистый</td>
-                <td>Персей</td>
-            </tr>
-        </tbody>
-    </table>
-    <hr>
+            <hr>
 
-    <h2>Связаться со мной</h2>
+            <div class="card bg-green">
+                <h2>Мои хобби</h2>
+                <ol class="list">
+                    <li>кусаться</li>
+                    <li>не давать спать</li>
+                    <li>кушать</li>
+                    <li>носиться как демон</li>
+                    <li>поспать</li>
+                </ol>
+            </div>
 
-    <form>
-        <div>
-            <label for="name">Ваше имя</label>
-            <input type="text" id="name" placeholder="Введите имя"> 
+            <div class="card bg-yellow">
+                <h2>А также</h2>
+                <ul class="list-and">    
+                    <li>драть когтеточку</li>
+                    <li>охотиться на мух</li>
+                    <li>прижиматься к земле на улице</li>
+                    <li>выбегать на корридор, когда приходят кожанные</li>
+                </ul>
+            </div>
+
+            <div class="card bg-red">
+                <h2>Мои Друзья</h2>
+
+                <table class="table">
+                    <!-- <thead>
+                        <tr>
+                            <th>Порода</th>
+                            <th>Цвет</th>
+                            <th>Имя</th>
+                        </tr>
+                    </thead> -->
+                    <tbody>
+                        <tr>
+                            <td>Дворняжка</td>
+                            <td>Черный</td>
+                            <td>Багира</td>
+                        </tr>
+                        <tr>
+                            <td>Дворовой</td>
+                            <td>Рыжий</td>
+                            <td>Джек</td>
+                        </tr>
+                        <tr>
+                            <td>Польский дворняга</td>
+                            <td>Цветной</td>
+                            <td>Китюрек</td>
+                        </tr>
+                        <tr>
+                            <td>Бенгал</td>
+                            <td>Пятнистый</td>
+                            <td>Персей</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <hr>
+
+    <div class="connection">
+
+
+            <form class="form">
+            <h2>Связаться со мной</h2>
+
+                <div class="form-row">
+
+                    <div class="form-group">
+                        <label for="name">Ваше имя</label>
+                        <input type="text" id="name" placeholder="Введите имя"> 
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Ваш email</label>
+                        <input type="email" id="email" placeholder="Введите email"> 
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Ваше сообщение</label>
+                    <textarea  id="message" cols="20" rows="5" placeholder="Здесь введите ваше сообщение"></textarea> 
+                </div>
+
+                <input class="btn" type="submit" value="Отправить">
+            </form>
         </div>
 
-        <div>
-            <label for="email">Ваш email</label>
-            <input type="email" id="email" placeholder="Введите email"> 
+            <hr>
+
+            <footer>
+                    <h4>My contacts</h4>
+
+                    <a href="https://www.instagram.com/">insta</a>
+                    /
+                    <a href="https://www.facebook.com/">telega</a>
+                    /
+                    <a href="https://www.vkontakte.com">VK</a>
+            </footer>
         </div>
+    <!-- <div class="elem">
+        <h2>bagirosina</h2>
+    </div> -->
 
-        <div>
-            <label for="message">Ваше сообщение</label>
-            <br>
-            <textarea  id="message" cols="20" rows="5" placeholder="Здесь введите ваше сообщение"></textarea> 
-        </div>
 
-        <button type="submit" value="Отправить">Отправить!</button>
-    </form>
-
-    <hr>
-</body>
+    </body>
 </html>
